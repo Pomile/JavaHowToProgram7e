@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+
+
+<system systemId="http://localhost:8080/EquationGenerator/EquationGeneratorService?WSDL" uri="xml-resources/web-service-references/EquationGeneratorService/wsdl/localhost_8080/EquationGenerator/EquationGeneratorService.wsdl"/>
+<system systemId="http://pjd2:8080/EquationGenerator/EquationGeneratorService/__container$publishing$subctx/WEB-INF/wsdl/EquationGeneratorService_schema1.xsd" uri="xml-resources/web-service-references/EquationGeneratorService/wsdl/pjd2_8080/EquationGenerator/EquationGeneratorService/__container$publishing$subctx/WEB-INF/wsdl/EquationGeneratorService_schema1.xsd"/>
+</catalog>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/web-project/3">
+            <name>ReservationClient</name>
+            <minimum-ant-version>1.6</minimum-ant-version>
+            <web-module-libraries>
+                <library>
+                    <file>${libs.jsfsupport-designtime.classpath}</file>
+                </library>
+                <library>
+                    <file>${libs.webui-designtime.classpath}</file>
+                </library>
+                <library>
+                    <file>${libs.jdbcsupport-designtime.classpath}</file>
+                </library>
+                <library>
+                    <file>${libs.theme-default.classpath}</file>
+                </library>
+                <library>
+                    <file>${libs.WEBSVC_SUPPORT_LIB.classpath}</file>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService1-1158780448538.jar}</file>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService1-1158780448538DesignTime.jar}</file>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService-1158782339347.jar}</file>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService-1158782339347DesignTime.jar}</file>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService-1158783412600.jar}</file>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService-1158783412600DesignTime.jar}</file>
+                </library>
+            </web-module-libraries>
+            <web-module-additional-libraries>
+                <library>
+                    <file>${libs.jsfsupport-runtime.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library>
+                    <file>${libs.webui-runtime.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library>
+                    <file>${libs.jdbcsupport-runtime.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library>
+                    <file>${libs.exceptionhandler-runtime.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library>
+                    <file>${libs.theme-default.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library>
+                    <file>${libs.WEBSVC_SUPPORT_LIB.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService1-1158780448538.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService-1158782339347.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library files="1">
+                    <file>${file.reference.ReservationService-1158783412600.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+            </web-module-additional-libraries>
+            <source-roots>
+                <root id="src.dir" name="Source Packages"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.src.dir" name="Test Packages"/>
+            </test-roots>
+        </data>
+    </configuration>
+</project>

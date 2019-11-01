@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+2006-11-28 18:31:05.500 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.2.1.7 - (453926): instance c013800d-010f-2fd5-1558-0000003e2088
+on database directory C:\books\2006\jhtp7\examples\ch25\fig25_31_33\AddressBook  
+
+Database Class Loader started - derby.database.classpath=''
+
+2006-11-28 18:31:23.171 GMT:
+Shutting down instance c013800d-010f-2fd5-1558-0000003e2088
+----------------------------------------------------------------

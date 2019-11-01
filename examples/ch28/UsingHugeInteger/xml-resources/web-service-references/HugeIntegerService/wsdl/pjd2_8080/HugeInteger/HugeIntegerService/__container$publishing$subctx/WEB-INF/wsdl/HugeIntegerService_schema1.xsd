@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://hugeinteger.ch28.jhtp7.deitel.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="smaller" type="ns1:smaller" xmlns:ns1="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="smaller">
+    <xs:sequence>
+      <xs:element name="first" type="xs:string" minOccurs="0"/>
+      <xs:element name="second" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="smallerResponse" type="ns2:smallerResponse" xmlns:ns2="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="smallerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="bigger" type="ns3:bigger" xmlns:ns3="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="bigger">
+    <xs:sequence>
+      <xs:element name="first" type="xs:string" minOccurs="0"/>
+      <xs:element name="second" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="biggerResponse" type="ns4:biggerResponse" xmlns:ns4="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="biggerResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="subtract" type="ns5:subtract" xmlns:ns5="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="subtract">
+    <xs:sequence>
+      <xs:element name="first" type="xs:string" minOccurs="0"/>
+      <xs:element name="second" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="subtractResponse" type="ns6:subtractResponse" xmlns:ns6="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="subtractResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="add" type="ns7:add" xmlns:ns7="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="add">
+    <xs:sequence>
+      <xs:element name="first" type="xs:string" minOccurs="0"/>
+      <xs:element name="second" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="addResponse" type="ns8:addResponse" xmlns:ns8="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="addResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="equals" type="ns9:equals" xmlns:ns9="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="equals">
+    <xs:sequence>
+      <xs:element name="first" type="xs:string" minOccurs="0"/>
+      <xs:element name="second" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="equalsResponse" type="ns10:equalsResponse" xmlns:ns10="http://hugeinteger.ch28.jhtp7.deitel.com/"/>
+
+  <xs:complexType name="equalsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

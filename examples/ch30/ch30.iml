@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/fig30_01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_05" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_06" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_07" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_08" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_09" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_12" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_13" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_14" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_15" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_16" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_17" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_18" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_20_21" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_23" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig30_24" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

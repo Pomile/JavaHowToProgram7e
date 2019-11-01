@@ -1,0 +1,122 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>MySQL&#174; - Installer Info</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script language="JavaScript" src="../popup.js"></script>
+</head>
+
+<body class="main">
+
+<h2>MySQL<sup>&#174;</sup> Version 5.0.27</h2>
+
+<p>Please read the following documentation before you <a href="#install">install</a> MySQL from the CD. </p>
+
+<p>Have you reviewed the MySQL <a href="javascript:openEula('../eulas/la-MySQL.htm')">License Agreement</a>?</p>
+
+<hr>
+<!--BODYCOPY Start--> 
+
+<a name="requirements"></a> 
+<h3>System Requirements</h3>
+
+<p>This CD includes the installer for MySQL and requires the following...</p>
+
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Most recent (6.0) version of Sun's <a href="inst-j2se.htm">Java&#153; 2 SDK</a> installed, prior to installing this software.</span></li>
+	<li class="bullet"><span class="bullettext">At the minimum you will need a version of the Linux OS that is built with on kernel 2.0 to install MySQL.</span></li>
+	<li class="bullet"><span class="bullettext">You need one of the following tools to uncompress the MySQL <code>tar</code> file binary distribution.
+	GNU <code>gunzip</code> or a reasonable <code>tar</code> utility; GNU <code>tar</code> is known to work. Either is usually pre-installed on most versions of the Linux operating system.</span></li>
+	<li class="bullet"><span class="bullettext">Unix socket file connections preferred over TCP/IP connections.</span></li>
+</ul>
+
+
+
+<hr>
+<a name="install_instruct"></a>
+<h3>Installing the MySQL Binary on Linux</h3>
+
+<p>The instructions that follow are for installing the binary distribution of MySQL. For alternative installation packages of the MySQL Community Server please visit the <a href="http://dev.mysql.com/downloads/mysql/5.0.html" target="new">MySQL 5.0 Downloads</a> site. You can refer <a href="http://dev.mysql.com/doc/refman/5.0/en/installing.html" target="new">Chapter 2</a> of the <a href="http://dev.mysql.com/doc/refman/5.0/en/index.html" target="new">MySQL 5.0 Reference Manual</a> covers the installation process of the  alternative packages.</p>
+
+<p>You must have the most recent (6.0) version of Sun's <a href="inst-j2se.htm">Java&#153; 2 SDK</a> installed, prior to installing this software.</p>
+
+<p>Navigate to the directory (<b>software\NetBeans\</b>) on this CD that contains the MySQL installer (<b>mysql-standard-5.0.27-linux-i686.tar.gz</b>) and download the file into a writable directory on your system.</li>
+
+<p>The basic commands that you must execute to install and use a MySQL binary distribution are:</p>
+
+
+<ol type="1" start="1.">
+	<li>To extract the archive <b>mysql-standard-5.0.27-linux-i686.tar.gz</b> into the same directory: 
+
+	<blockquote><pre>tar xzf <b>mysql-standard-5.0.27-linux-i686.tar.gz</b></pre></blockquote>
+
+	<p>If this fails, the version of tar may not support gzip compression. In this case, you can use the traditional two-stage command: </p>
+
+	<blockquote><pre>gzip -dc <b>mysql-standard-5.0.27-linux-i686.tar.gz</b> | tar xf -</pre>
+	</li>
+
+	<li>Once the binary is extracted, please do the following to install the MySQL binary...
+
+	<blockquote><pre>shell> ln -s <i>FULL-PATH-TO-MYSQL-VERSION-OS</i> mysql
+shell> cd mysql
+shell> scripts/mysql_install_db --user=mysql
+shell> chown -R root  .
+shell> chown -R mysql data
+shell> chgrp -R mysql .
+shell> bin/mysqld_safe --user=mysql &
+</pre></blockquote>
+</li>
+
+</ol>
+
+<p class="notes"><b>NOTE: </b>This procedure does not set up any passwords for MySQL accounts. Refer to the <a href="http://dev.mysql.com/doc/refman/5.0/en/unix-post-installation.html" target="new">Post-Installation Procedures</a> section of the <a href="http://dev.mysql.com/doc/refman/5.0/en/index.html" target="new">MySQL 5.0 Reference Manual</a> to customize your installation of MySQL to meet you needs.</p>
+
+
+
+<p>For a more detailed installation alternative refer to <a href="http://dev.mysql.com/doc/refman/5.0/en/installing.html" target="new">Chapter 2</a> of the <a href="http://dev.mysql.com/doc/refman/5.0/en/index.html" target="new">MySQL 5.0 Reference Manual</a></p>
+
+
+<!--BODYCOPY End--> 
+<hr>
+
+<a name="location"></a> 
+<h3>Installer File Location</h3>
+
+<p><a href="../../software/MySQL/mysql-standard-5.0.27-linux-i686.tar.gz" name="install">Download</a> MySQL from the CD.
+
+<p class="notes"><b>Note: </b>In accordance with the GNU General Public License (GPL) we are including the source code for this application. The source code is located in the '<b>software\MySQL\SourceCode</b>' folder.</p>
+
+<hr>
+<a name="add_info"></a> 
+<h3>Additional Information</h3>
+  <dl> 
+    <dt>For the latest information on MySQL please visit... </dt>
+    <dd><a href="http://www.mysql.com/" target="new">http://www.mysql.com</a></dd>
+
+    <dt>MySQL Reference Manual... </dt>
+    <dd><a href="http://www.mysql.com/doc/en/index.html" target="new">http://www.mysql.com/doc/en/index.html</a></dd>
+
+    <dt>MySQL Documentation...</dt>
+    <dd><a href="http://www.mysql.com/documentation/index.html" target="new">http://www.mysql.com/documentation/index.html</a></dd>
+
+    <dt>MySQL Forums...</dt>
+    <dd><a href="http://forums.mysql.com" target="new">http://forums.mysql.com</a>/</dd>
+
+    <dt>Blogs...</dt>
+    <dd><a href="http://www.planetmysql.org" target="new">http://www.planetmysql.org</a>/</dd>
+
+    <dt>MySQL Newsletter...</dt>
+    <dd><a href="http://www.mysql.com/news-and-events/newsletter/" target="new">http://www.mysql.com/news-and-events/newsletter/</a></dd>
+
+</dl>
+
+<hr WIDTH="100%">
+
+<p align="center"><font size="-1">Back to...<br><a href="install-main.htm">Software Installation</a></font></p>
+
+<p>
+
+</body>
+</html>

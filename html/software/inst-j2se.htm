@@ -1,0 +1,272 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Java&#153; 2 SE Development Kit (JDK) 6 - Installer Info</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script language="JavaScript" src="../popup.js"></script>
+</head>
+
+<body class="main">
+
+<h2>Java&#153; 2 SE Development Kit (JDK) 6</h2>
+
+<p>Please read the following documentation before you <a href="#Run">install</a> 
+  the JDK from the CD. 
+
+<p>Have you reviewed the J2SE JDK <a href="javascript:openEula('../eulas/la-jdk-6.htm')">License Agreement</a>?
+
+
+<p class="notes"><b>Note: </b>The JDK has two version numbers; external version number (6) and an internal version number (1.6.0).</p>
+
+<p align="center"> <a href="#requirements">System Requirements</a> | <a href="#Run">Installation 
+  Instructions</a> | <a href="#Plugin">Java Plugin Browser Registration</a> | <a href="#WebStart">Java Web Start Notes</a>  | <a href="#Troubleshooting">Troubleshooting</a> 
+
+<hr>
+<!--BODYCOPY Start--> 
+<a name="requirements"></a> 
+<h3>System Requirements</h3>
+
+<p>The JDK can be installed on the following 32-bit, distributions of Linux...</p> 
+
+<ul type="square" class="bullet">
+  <li class="bullet"><span class="bullettext">Red Hat 2.1, Red Hat Enterprise Linux 3.0 or 4.0. With one of the following Desktop Managers: Gnome 1.4 - Sawfish  1.0 or Gnome 2.2 -  Metacity 2.4</span></li>
+  <li class="bullet"><span class="bullettext">Suse Enterprise Linux Server 8, 9, 10 or Suse Enterprise Linux Desktop. With the following Desktop Manager: Gnome 2.0.5 - Metacity  2.6.2</span></li>
+</ul>
+
+<p>One of the following browsers: Mozilla 1.4.<i>x</i> or 1.7, Firefox 1.06
+
+<p>The minimum physical RAM is required to run graphically based applications. More RAM is recommended for applets running within a browser using the Java Plug-in. Running with less memory may cause disk swapping, which has a severe effect on performance. Very large programs may require more RAM for adequate performance. This information is listed on the "Software Environment Requirements" table, which is on the "Software Main" page. If you have not reviewed this information, please do so <a href="install-main.htm#SoftwareTable">now</a>.</p>
+
+<p>You will need 140 MB of disk space to install the JDK.</p>
+
+<hr>
+<a name="preinstall"></a>
+<h3>Pre-Installation Comments</h3>
+<blockquote>
+
+<p>For the latest information on the Java SE 6, you may want to review the <a href="http://java.sun.com/javase/6/webnotes/README.html" target="new">ReadMe</a> and <a href="http://java.sun.com/javase/6/webnotes/index.html" target="new">ReleaseNotes</a>.</p>
+
+<p>You must have root access to install this file.</p>
+
+</blockquote>
+
+
+<hr>
+<a name="Run"></a>
+<h3>Installation of RPM File</h3>
+
+<blockquote>
+
+<p>Please review these instructions prior to running the self-extracting binary file to install the JDK.</p>
+
+<p class="note"><b>NOTE: </b>You must have root access to install this file.</p>
+
+<ol type="1" start="1.">
+	<li>To begin the installation from within your browser, <i><b>after you read 
+all the directions on this page</b></i>, click <a href="#install">Download JDK from the CD</a> link at the bottom of this page. 
+
+		<p>You can download to any directory you choose; it does not have to be the directory where you want to install the JDK.</p>
+	</li>
+
+	<li>Become <b>root</b> by running the <span class="cdts">su</span> command and entering the super-user password.</li>
+
+	<li>Extract and install the contents of the downloaded file.
+
+	<p>Change directory to where the downloaded file is located and run these commands to first set the executable permissions and then run the binary to extract and run the RPM file: </p>
+
+	<dl>
+		<dd class="cdts">chmod a+x jdk-6-linux-i586-rpm.bin
+		
+		<p class="cdts">./jdk-6-linux-i586-rpm.bin</p>
+		
+		</dd>
+
+	<p> Note that the initial "<span class="cdts">./</span>" is required if you do not have "<span class="cdts">.</span>" in your PATH environment variable.</p>
+
+	<p> The script displays a binary license agreement, which you
+are asked to agree to before installation can proceed. Once you have
+agreed to the license, the install script creates and runs the file <span class="cdts">jdk-6-linux-i586.rpm</span>
+in the current directory.</p>
+
+	<p><b>NOTE</b> - If instead you want to only extract the RPM file but not install it, you can run the .bin file with the -x argument. You do not need to be root to do this.</p>
+
+	</li>
+
+	<li>To save disk space delete the <span class="cdts">bin</span> and <span class="cdts">rpm</span> files after installing the JDK.</li>
+
+
+	<li>Exit the root shell.
+	
+	<dl>
+		<dt>The RPM packages creates two links <span class="cdts">/usr/java/latest</span> and <span class="cdts">/usr/java/default</span>. </dt>
+			
+			<dd>The <span class="cdts">/usr/java/latest</span> link will always point to the version of Java that Sun Microsystems considers the latest version.  Subsequent upgrades of the packages will overwrite this value if it is not the latest version.</dd>
+			
+			<dd>By default, <span class="cdts">/usr/java/default</span> points to <span class="cdts">/usr/java/latest</span>. However, if administrators change /usr/java/default to  point to another version of Java, subsequent package upgrades will be provided by the administrators and cannot be overwritten.</dd>
+	</dl>	
+	
+	<p>When the JDK is installed, links to  javac jar and javadoc are also created apart from the JRE links. These links point to the appropriate tool referenced by /usr/java/default. This allows the user to easily run the default version of these Java tools.</p>
+	
+	<p>A new service script, named jexec, is added to /etc/init.d. This script allows users to directly execute any standalone JAR file that has an execution permission set. This can be demonstrated using an example from the JDK:</p>
+	
+	
+	<dl>
+		<dd class="cdts">cd /usr/java/jdk1.6.0/demo/jfc/SwingSet2</dd>
+		<dd class="cdts">chmod +x SwingSet2.jar</dd>
+		<dd class="cdts">SwingSet2.jar</dd>
+	</dl>	
+		
+	</li>
+</blockquote>
+
+
+<hr>
+<a name="Plugin"></a>
+<h3>Java Plugin Browser Registration Instructions</h3>
+
+<blockquote>
+
+<p>You must register the Java Plugin product with Netscape or Mozilla for the Plugin to work. To install the Java Plugin follow these steps.</p>
+
+<dl class="notes">
+<dt><b>NOTES: </b></dt>
+	<dd>For SuSE the 8.1 or higher version of Mozilla must be used, and for non-SuSE Linux, the version of Mozilla must be 1.1 or higher. </dd>
+	<dd>Only Mozilla or Firefox can be registered with Java Plugin.</dd>
+	<dd>Only one Java Plugin can be registered at a time. When you want to use a different version, unregister any other version and register the new one.</dd>
+	<dd><b>Example:</b>
+<blockquote>
+	<dl class="notes">
+		<dt>Suppose for you created a symbolic link in the Mozilla <span class="cdts">plugins</span> directory to:</dt>
+			<dd class="cdts">~/jdk1.6.0/jre/plugin/i386/ns7/libjavaplugin_oji.so</dd>
+		<dt>Then <span class="cdts">cd</span> to the Mozilla <span class="cdts">plugins</span> directory and remove the link as shown below:</dt>
+			<dd class="cdts">rm libjavaplugin_oji.so</dd>
+	</dl>
+</blockquote>
+	Also check that there are no links in the Mozilla <span class="cdts">components</span> directory.</dd>
+</dl>
+
+<ol type="1" start="1.">
+	<li>Uninstall any previous installations of Java Plugin.
+		<dl>
+				<dd class="cdts">rm -fr $HOME/.netscape/java<dd>
+				<dd class="cdts">rm $HOME/.netscape/plugins/javaplugin.so<dd>
+				<dd class="cdts">rm $HOME/.netscape/plugins/libjavaplugin.so<dd>
+		</dl>
+	One or more of these files may exist on your machine, depending on which previous versions of Java Plugin you have installed.
+	</li>
+
+	<li>For the Mozilla browser create a symbolic link to the Plugin in the Mozilla <span class="cdts">plugins</span> directory.
+
+	<p>Create a symbolic link to the Java Plugin <span class="cdts">libjavaplugin.so</span> file in the Mozilla <span class="cdts">plugins</span> directory.</p>
+	
+		<dl>
+				<dd class="cdts">cd &lt;Mozilla&gt;/plugins<dd>
+				<dd class="cdts">ln -s &lt;JRE&gt;/plugin/i386/&lt;ns7 | ns7-gcc29&gt;/libjavaplugin_oji.so<dd>
+		</dl>
+
+	<p>In the <span class="cdts">ln</span> command line above, use <span class="cdts">ns7-gcc29</span> if Mozilla was compiled with gcc2.9. </p>
+
+
+	<p>If you have other Mozilla "objects" open before restarting (Messenger, Composer ...) you will need to shut them down as well. </p>
+
+	<p>In Mozilla do <b>Help</b> -&gt; <b>About Plugins</b> to confirm that the Java Plugin is loaded.</p>
+
+
+	</li>
+
+	<li>Start the Mozilla browser, or restart it if it is already up.</li>
+
+	<li>For Firefox, create a symbolic link to the Java Plugin in the Firefox plugins directory.
+
+	<p>Create a symbolic link to the Java Plugin <span class="cdts">libjavaplugin.so</span> file in the Firefox <span class="cdts">plugins</span> directory.</p>	
+	
+		<dl>
+				<dd class="cdts">cd &lt;Firefox&gt;/plugins<dd>
+				<dd class="cdts">ln -s &lt;JRE&gt;/plugin/i386/&lt;ns7 | ns7-gcc29&gt;/libjavaplugin_oji.so<dd>
+		</dl>
+
+	<p>In the <span class="cdts">ln</span> command line above, use <span class="cdts">ns7-gcc29</span> if Firefox was compiled with gcc2.9. </p>
+
+	<p>If you install Firefox <b>1.5</b> or later, you can enable the Java Console menu item in the Tools menu.  Change directories to the Firefox extensions directory, then unzip <span class="cdts">ffjcext.zip</span> there.</p>
+
+		<dl>
+				<dd class="cdts">cd &lt;Firefox&gt;/extensions<dd>
+				<dd class="cdts">unzip &lt;JRE&gt;/lib/deploy/ffjcext.zip<dd>
+		</dl>
+	</li>
+
+	<li>Start the Firefox browser, or restart it if it is already up.</li>
+
+	<p>In Firefox, type <b>about:plugins</b> in the Location bar to confirm that the Java Plugin is loaded. If the version is Firefox 1.5 or later, click the Tools menu to confirm that <b>Java Console</b> is there.</p>
+
+</ol>
+
+</blockquote>
+
+
+<hr>
+<a name="WebStart"></a>
+<h3>Java Web Start Installation Notes</h3>
+<blockquote>
+<p>This JDK release includes Java Web Start; it is installed automatically with the JDK. But note the following:</p>
+
+<ul type="square" class="bullet">
+  <li class="bullet"><span class="bullettext"><b>Compatibility:</b> The release of Java Web Start that comes with this JDK/JRE can be run on SDK/JRE 1.2.2 or later. It will not work with SDK/JRE 1.1.x or earlier.</span></li>
+  <li class="bullet"><span class="bullettext"><b>Upgrading from Previous Versions:</b> If you have a previous release of Java Web Start, do not uninstall it. Uninstalling it will cause the download cache to be cleared, and all previously installed Java Web Start applications will have to be downloaded again. This new release will overwrite previous installations and automatically update browsers to use this new release. The configuration files and program files folder used by Java Web Start have not changed, so all your settings will remain intact after the upgrade.</span></li>
+  <li class="bullet"><span class="bullettext"><b>Using Java Web Start with Netscape 6.x/7.x:</b> For Netscape 6.x/7.x users, setup the Java Web Start MIME type (JNLP) in the Edit-&gt;Preferences-&gt;Navigator-&gt;Helper Applications section. The file extension is <span class="cdts">jnlp</span>; MIME Type is <span class="cdts">application/x-java-jnlp-file</span>. It should be handled by the <span class="cdts">javaws</span> executable file in your Java Web Start directory. Also note that, due to a problem with the JavaScript in Netscape 6.x/7.x, you must use the non-JavaScript version of the demos page.</span></li>
+</ul>
+</blockquote>
+
+
+<hr>
+<a name="Troubleshooting"></a>
+<h3>Troubleshooting the Installation</h3>
+
+<p>To print on Linux, the <span class="cdts">/usr/sbin/lpc</span> utility must
+be installed. This is a standard Linux utility. On RedHat 7.1, for
+example, this utility is in the "LPRng-3.7.4-22 RPM" package.</p>
+
+<p>You can also visit the "<a href="http://forum.java.sun.com/" target="new">Java Technology Forums</a>" for Java troubleshooting advice.</p>
+
+
+<!--BODYCOPY End--> 
+
+
+<hr>
+<a name="location"></a> 
+<h3>Installer File Location</h3>
+
+<p><a href="../../software/Sun/jdk-6-linux-i586-rpm.bin" name="install">Download 
+    Java&#153; 2 SDK from the CD</a> </p>
+
+<p>The installer (<b>jdk-6-linux-i586-rpm.bin</b>) is located 
+    in the <b>software\Sun\</b> directory on the root level of this CD. </p>
+
+
+  <hr>
+ 
+<h3>Additional Information</h3>
+  <dl> 
+    <dt>For the latest information on Java&#153; 2 SDK please visit... 
+    <dd><a href="http://java.sun.com/j2se/" target="new">http://java.sun.com/j2se/</a></dd>
+
+    <dt>For on-line Java 2 SDK Documentation please visit... 
+    <dd><a href="http://java.sun.com/docs/" target="new">http://java.sun.com/docs/</a></dd>
+
+    <dt>The "New to Java Center" is located here...
+    <dd><a href="http://java.sun.com/learning/new2java/index.html" target="new">http://java.sun.com/learning/new2java/index.html</a></dd>
+
+    <dt>For Java troubleshooting, visit the "Java Technology Forums" which are located here...
+    <dd><a href="http://forum.java.sun.com/" target="new">http://forum.java.sun.com/</a></dd>
+  </dl>
+
+  <hr width="100%">
+
+  <p align="center"><font size="-1"><a href="install-main.htm">Back to Software Installation</a></font></p>
+
+</body>
+</html>
+
+ 

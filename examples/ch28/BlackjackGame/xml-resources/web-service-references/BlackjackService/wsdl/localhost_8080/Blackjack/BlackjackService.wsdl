@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://blackjack.ch28.jhtp7.deitel.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://blackjack.ch28.jhtp7.deitel.com/" name="BlackjackService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://blackjack.ch28.jhtp7.deitel.com/" schemaLocation="http://pjd2:8080/Blackjack/BlackjackService/__container$publishing$subctx/WEB-INF/wsdl/BlackjackService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="dealCard">
+    <part name="parameters" element="tns:dealCard"/>
+  </message>
+  <message name="dealCardResponse">
+    <part name="parameters" element="tns:dealCardResponse"/>
+  </message>
+  <message name="getHandValue">
+    <part name="parameters" element="tns:getHandValue"/>
+  </message>
+  <message name="getHandValueResponse">
+    <part name="parameters" element="tns:getHandValueResponse"/>
+  </message>
+  <message name="shuffle">
+    <part name="parameters" element="tns:shuffle"/>
+  </message>
+  <message name="shuffleResponse">
+    <part name="parameters" element="tns:shuffleResponse"/>
+  </message>
+  <portType name="Blackjack">
+    <operation name="dealCard">
+      <input message="tns:dealCard"/>
+      <output message="tns:dealCardResponse"/>
+    </operation>
+    <operation name="getHandValue">
+      <input message="tns:getHandValue"/>
+      <output message="tns:getHandValueResponse"/>
+    </operation>
+    <operation name="shuffle">
+      <input message="tns:shuffle"/>
+      <output message="tns:shuffleResponse"/>
+    </operation>
+  </portType>
+  <binding name="BlackjackPortBinding" type="tns:Blackjack">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="dealCard">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="getHandValue">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="shuffle">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="BlackjackService">
+    <port name="BlackjackPort" binding="tns:BlackjackPortBinding">
+      <soap:address location="http://pjd2:8080/Blackjack/BlackjackService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

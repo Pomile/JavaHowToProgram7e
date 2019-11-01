@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+<system systemId="http://localhost:8080/HugeInteger/HugeIntegerService?wsdl" uri="xml-resources/web-service-references/HugeIntegerService/wsdl/localhost_8080/HugeInteger/HugeIntegerService.wsdl"/>
+<system systemId="http://pjd2:8080/HugeInteger/HugeIntegerService/__container$publishing$subctx/WEB-INF/wsdl/HugeIntegerService_schema1.xsd" uri="xml-resources/web-service-references/HugeIntegerService/wsdl/pjd2_8080/HugeInteger/HugeIntegerService/__container$publishing$subctx/WEB-INF/wsdl/HugeIntegerService_schema1.xsd"/>
+</catalog>

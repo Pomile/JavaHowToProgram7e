@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+<system systemId="http://localhost:8080/Blackjack/BlackjackService?WSDL" uri="xml-resources/web-service-references/BlackjackService/wsdl/localhost_8080/Blackjack/BlackjackService.wsdl"/>
+<system systemId="http://pjd2:8080/Blackjack/BlackjackService/__container$publishing$subctx/WEB-INF/wsdl/BlackjackService_schema1.xsd" uri="xml-resources/web-service-references/BlackjackService/wsdl/pjd2_8080/Blackjack/BlackjackService/__container$publishing$subctx/WEB-INF/wsdl/BlackjackService_schema1.xsd"/>
+</catalog>

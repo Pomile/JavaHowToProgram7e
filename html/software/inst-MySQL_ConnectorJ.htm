@@ -1,0 +1,123 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>MySQL&#174; Connector/J - Installer Info</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script language="JavaScript" src="../popup.js"></script>
+</head>
+
+<body class="main">
+
+<h2>MySQL<sup>&#174;</sup> Connector/J Version 5.0.4</h2>
+
+<p>Please read the following documentation before you <a href="#install">install</a> 
+  MySQL Connector/J  from the CD. </p>
+
+<p>Have you reviewed the MySQL Connector/J <a href="javascript:openEula('../eulas/la-MySQL.htm')">License Agreement</a>?</p>
+
+<hr>
+<!--BODYCOPY Start--> 
+<a name="requirements"></a> 
+<h3>System Requirements</h3>
+
+<p>This CD includes the installer for MySQL Connector/J  and requires the following...</p>
+
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Most recent (6.0) version of Sun's <a href="inst-j2se.htm">Java&#153; 2 SDK</a> installed, prior to installing this software.</span></li>
+	<li class="bullet"><span class="bullettext">MySQL Connector/J supports all known MySQL server versions. Some features (foreign keys, updatable result sets) require more recent versions of MySQL to operate.<span></li>
+	<li class="bullet"><span class="bullettext">GUI or command-line utility to un-archive the distribution.<span></li>
+</ul>
+
+<p class="notes"><b>Note: </b>Because of the implementation of java.sql.Savepoint, Connector/J
+        3.1.0 and newer will not run on JDKs older than 1.4 unless the class
+        verifier is turned off (-Xverify:none), as the class verifier will try
+        to load the class definition for java.sql.Savepoint even though it is
+        not accessed by the driver unless you actually use savepoint
+        functionality.</p>
+
+
+<a name="install"></a>
+<h3>Installation Instructions</h3>
+
+<p>To install MySQL Connector/J  follow the instructions below.</p>
+
+<p>You must have the most recent (6.0) version of Sun's <a href="inst-j2se.htm">Java&#153; 2 SDK</a> installed, prior to installing this software.</p>
+
+<p>The installer <b>mysql-connector-java-5.0.4.zip</b> is located in the <b>software\MySQL\</b> directory on the root level of this CD. Using a GUI or command-line utility un-archive the distribution to a location on you computer.<p>
+
+<p>The ZIP archive will expand to a directory or folder named "mysql-connector-java-5.0.1", but the contents contain the correct Java archive named "mysql-connector-java-5.0.4-bin.jar".</p>
+
+<p>Once you have extracted the distribution archive, you can install the driver by placing <code>mysql-connector-java-5.0.4-bin.jar</code> in your classpath, by directly specifying it with the command line switch -cp when starting your JVM.</p>
+
+<p>If you are going to use the driver with the JDBC DriverManager, you would use <code>com.mysql.jdbc.Driver</code> as the class that implements java.sql.Driver.</p>
+
+<p>You can set the <code>CLASSPATH</code> environment variableunder UNIX, Linux or Mac OS X either locally for a user within their <code>.profile</code>, <code>.login</code> or other login file. You can also set it globally by editing the global <code>/etc/profile</code> file.</p>
+
+<p>For example, under a C shell (csh, tcsh) you would add the Connector/J driver to your <code>CLASSPATH</code> using the following:</p>
+
+<blockquote><pre>shell&gt; setenv CLASSPATH /path/to/mysql-connector-java-5.0.4-bin.jar:$CLASSPATH</pre>
+</blockquote>
+
+<p>Or with a Bourne-compatible shell (sh, ksh, bash):</p>
+
+<blockquote><pre>export set CLASSPATH=/path/to/mysql-connector-java-5.0.4-bin.jar:$CLASSPATH</pre>
+</blockquote>
+
+<p>If you are developing servlets or JSPs, and your application server is J2EE-compliant, you can put the driver's .jar file in the WEB-INF/lib subdirectory of your webapp, as this is a standard location for third party class libraries in J2EE web applications.</p>
+
+<p> You can also use the MysqlDataSource or MysqlConnectionPoolDataSource classes in the <code class="literal">com.mysql.jdbc.jdbc2.optional</code> package, if your J2EE application server supports or requires them. Starting with Connector/J 5.0.0, the <code class="literal">javax.sql.XADataSource</code> interface is implemented via the <code>com.mysql.jdbc.jdbc2.optional.MysqlXADataSource</code> class, which supports XA distributed transactions when used in combination with MySQL server version 5.0.</p>
+
+
+<p>The various MysqlDataSource classes support the following parameters (through standard set mutators):</p>
+
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">user<span></li>
+	<li class="bullet"><span class="bullettext">password<span></li>
+	<li class="bullet"><span class="bullettext">serverName (see the previous section about fail-over hosts)<span></li>
+	<li class="bullet"><span class="bullettext">databaseName<span></li>
+	<li class="bullet"><span class="bullettext">port<span></li>
+</ul>
+
+
+<!--BODYCOPY End--> 
+<hr>
+<a name="location"></a> 
+<h3>Installer File Location</h3>
+
+<p><a href="../../software/MySQL/mysql-connector-java-5.0.4.zip" name="install">Download</a> MySQL Connector/J ZIP archive from the CD.
+
+<p>The installer 
+  <b>mysql-connector-java-5.0.4.zip</b> is located in the <b>software\MySQL\</b> 
+  directory on the root level of this CD. <p>
+<p class="notes"><b>Note: </b>In accordance with the GNU General Public License (GPL) we are including the source code for this application. The source code is located in the '<b>software\MySQL\SourceCode</b>' folder.</p>
+
+<hr>
+
+<a name="add_info"></a> 
+<h3>Additional Information</h3>
+
+<dl>
+	<dt>For the latest information on MySQL Connector/J  please visit...</dt>
+		<dd><a href="http://www.mysql.com/products/connector/j/" target="new">http://www.mysql.com/products/connector/j/</a></dd>
+
+	<dt>MySQL Connector/J Documentation</dt>
+		<dd><a href="http://dev.mysql.com/doc/refman/5.0/en/connector-j.html" target="new">http://dev.mysql.com/doc/refman/5.0/en/connector-j.html</a></dd>
+
+	<dt>Connector/J Community Support</dt>
+		<dd><a href="http://dev.mysql.com/doc/refman/5.0/en/connector-j-support-community.html" target="new">http://dev.mysql.com/doc/refman/5.0/en/connector-j-support-community.html</a></dd>
+
+	<dt>Using MySQL With Java</dt>
+		<dd><a href="http://dev.mysql.com/usingmysql/java/" target="new">http://dev.mysql.com/usingmysql/java/</a></dd>
+
+</dl>
+
+  <hr width="100%">
+
+<p align="center"><font size="-1">Back to...<br><a href="install-main.htm">Software Installation</a></font></p>
+
+<p>
+
+</body>
+</html>

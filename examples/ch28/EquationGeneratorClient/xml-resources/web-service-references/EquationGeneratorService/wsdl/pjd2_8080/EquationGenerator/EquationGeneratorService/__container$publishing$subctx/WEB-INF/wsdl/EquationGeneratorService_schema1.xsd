@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://equationgenerator.ch28.jhtp7.deitel.com/" xmlns:tns="http://equationgenerator.ch28.jhtp7.deitel.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="generateEquation" type="tns:generateEquation"/>
+
+  <xs:element name="generateEquationResponse" type="tns:generateEquationResponse"/>
+
+  <xs:complexType name="generateEquation">
+    <xs:sequence>
+      <xs:element name="operation" type="xs:string" minOccurs="0"/>
+      <xs:element name="difficulty" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="generateEquationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:equation" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="equation">
+    <xs:sequence>
+      <xs:element name="leftHandSide" type="xs:string" minOccurs="0"/>
+      <xs:element name="leftOperand" type="xs:int"/>
+      <xs:element name="operationType" type="xs:string" minOccurs="0"/>
+      <xs:element name="returnValue" type="xs:int"/>
+      <xs:element name="rightHandSide" type="xs:string" minOccurs="0"/>
+      <xs:element name="rightOperand" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://hugeinteger.ch28.jhtp7.deitel.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://hugeinteger.ch28.jhtp7.deitel.com/" name="HugeIntegerService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://hugeinteger.ch28.jhtp7.deitel.com/" schemaLocation="http://pjd2:8080/HugeInteger/HugeIntegerService/__container$publishing$subctx/WEB-INF/wsdl/HugeIntegerService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="bigger">
+    <part name="parameters" element="tns:bigger"/>
+  </message>
+  <message name="biggerResponse">
+    <part name="parameters" element="tns:biggerResponse"/>
+  </message>
+  <message name="smaller">
+    <part name="parameters" element="tns:smaller"/>
+  </message>
+  <message name="smallerResponse">
+    <part name="parameters" element="tns:smallerResponse"/>
+  </message>
+  <message name="add">
+    <part name="parameters" element="tns:add"/>
+  </message>
+  <message name="addResponse">
+    <part name="parameters" element="tns:addResponse"/>
+  </message>
+  <message name="equals">
+    <part name="parameters" element="tns:equals"/>
+  </message>
+  <message name="equalsResponse">
+    <part name="parameters" element="tns:equalsResponse"/>
+  </message>
+  <message name="subtract">
+    <part name="parameters" element="tns:subtract"/>
+  </message>
+  <message name="subtractResponse">
+    <part name="parameters" element="tns:subtractResponse"/>
+  </message>
+  <portType name="HugeInteger">
+    <operation name="bigger">
+      <input message="tns:bigger"/>
+      <output message="tns:biggerResponse"/>
+    </operation>
+    <operation name="smaller">
+      <input message="tns:smaller"/>
+      <output message="tns:smallerResponse"/>
+    </operation>
+    <operation name="add">
+      <input message="tns:add"/>
+      <output message="tns:addResponse"/>
+    </operation>
+    <operation name="equals">
+      <input message="tns:equals"/>
+      <output message="tns:equalsResponse"/>
+    </operation>
+    <operation name="subtract">
+      <input message="tns:subtract"/>
+      <output message="tns:subtractResponse"/>
+    </operation>
+  </portType>
+  <binding name="HugeIntegerPortBinding" type="tns:HugeInteger">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="bigger">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="smaller">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="add">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="equals">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="subtract">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="HugeIntegerService">
+    <port name="HugeIntegerPort" binding="tns:HugeIntegerPortBinding">
+      <soap:address location="http://pjd2:8080/HugeInteger/HugeIntegerService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>

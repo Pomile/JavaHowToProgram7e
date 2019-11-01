@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/fig11_02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_06_07" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_09_10" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_15_16" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_17_18" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_19_20" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_21_22" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_23_24" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_25_26" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_28_29" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_31_32" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_34_35" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_36_37" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_39_40" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_41_42" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_43_44" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_45_46" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fig11_47_48" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

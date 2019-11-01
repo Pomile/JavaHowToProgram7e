@@ -1,0 +1,727 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>Sun&#174; Java&#153; Studio Creator - Installer Info</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script language="JavaScript" src="../popup.js"></script>
+</head>
+
+<body class="main">
+
+<h2>Sun<sup>&#174;</sup> Java&#153; Studio Creator 2 Update 1</h2>
+
+<p>Please read the following documentation before you <a href="#install">install</a> 
+  Java Studio Creator from the CD. </p>
+
+<p>Have you reviewed the Java Studio Creator <a href="javascript:openEula('../eulas/la-JavaStudioCreator.htm')">License Agreement</a>?</p>
+
+<hr>
+<h3>Installation Overview</h3>
+<dl>
+	<dd><a href="#requirements">System Requirements</a></dd>
+	<dd><a href="#prior_version">Using a Prior Version</a></dd>
+	<dd><a href="#install_instruct">Installation Instructions</a></dd>
+	<dd><a href="#startIDE">Starting the IDE</a></dd>
+	<dd><a href="#ports">Changes to Default Ports</a></dd>
+	<dd><a href="#find_dflt_projects_dir">Finding the Default Projects Directory</a></dd>
+	<dd><a href="#troubleshooting">Troubleshooting Installation</a></dd>
+	<dd><a href="#autoupdate">Using the Update Center</a></dd>
+	<dd><a href="#hotfix">Hot Fixes</a></dd>
+	<dd><a href="#uninstalling">Uninstalling the Sun Java Studio Creator 2 Update 1 Software</a></dd>
+	<dd><a href="#postuninstallcleanup">Post Uninstall Cleanup</a></dd>
+	<dd><a href="#generalissues">General Issues and Bugs</a></dd>
+	<dd><a href="#location">Installer File Location</a></dd>
+	<dd><a href="#add_info">Additional Information</a></dd>
+</dl>
+
+<hr>
+
+<!--BODYCOPY Start--> 
+
+<a name="requirements"></a> 
+<h3>System Requirements</h3>
+
+
+<dl class="notes">
+<dt><b>NOTES: </b></dt>
+	<dd>Since this installer is bundled with an older version of the JDK; you must have the most recent (6.0) version of Sun's <a href="inst-j2se.htm">Java&#153; 2 SDK</a> installed, prior to installing this software.</dd>
+	<dd>The Sun Java System Application Server Platform Edition 8.2 and a database are bundled and installed with the product. The Java 2 Platform, Standard Edition (J2SE Platform) 1.5.0_04 software is bundled and installed for all supported operating systems except Mac OS. The browser settings for all platforms should be set with JavaScript enabled, cookies on, and CSS enabled.</dd>
+	<dd>The Sun Java Studio Creator 2 IDE supports the JDK 1.4 source level for code written within a project.</dd>
+</dl>
+
+<p>This CD includes the installer for the Java Studio Creator and requires the following...</p>
+
+
+<h4>Platform</h4>
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Login as the root user (or as a user with the correct permissions, a.k.a. superuser).</span></li>
+	<li class="bullet"><span class="bullettext">Intel Pentium 4 (or equivalent) at 1 Ghz processing speed.</span></li>
+	<li class="bullet"><span class="bullettext">1 GB of memory.</span></li>
+	<li class="bullet"><span class="bullettext">750 MB (an additional 350 MB required for installation) of free disk space.</span></li>
+	<li class="bullet"><span class="bullettext">Operating system: Red Hat Enterprise Linux 3</span></li>
+	<li class="bullet"><span class="bullettext">Supported browsers:
+		<br><span class="indent40">&ndash; At least Firefox 1.0.4</span>
+</span></li>
+</ul>
+
+<h4>Database Servers and JDBC Drivers</h4>
+
+
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Supported with the Java DB JDBC driver: Java DB - Sun's distribution of the open source Apache Derby 100% Java technology database - is bundled and installed with the IDE, and provided for samples only.</span></li>
+</ul>
+
+
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Supported with the included Sun Java System JDBC drivers:
+		<br><span class="indent40">&ndash; Oracle (8iR3, 9iR2, and 10gR1)</span>
+		<br><span class="indent40">&ndash; Microsoft SQL Server 2000 SP3</span>
+		<br><span class="indent40">&ndash; Sybase ASE 12.5</span>
+		<br><span class="indent40">&ndash; IBM DB2 V8.1</span>
+</span></li>
+</ul>
+
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Supported with other drivers: MySQL database server, 4.1 and 5.0, with JDBC driver MySQL Connector/J version 3.1.11</span></li>
+</ul>
+
+
+<h4>Deployment Servers</h4>
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Supported deployment servers are listed below.
+		<br><span class="indent40">&ndash; Sun Java System Application Server 8.2 PE (bundled)</span>
+		<br><span class="indent40">&ndash; Sun Java System Application Server 7.1 SE/EE</span>
+		<br><span class="indent40">&ndash; Sun Java Web Server 6.1</span>
+		<br><span class="indent40">&ndash; Sun Portal Server 6.3.1, 7.0</span>
+		<br><span class="indent40">&ndash; Apache Tomcat 5.x</span>
+		<br><span class="indent40">&ndash; BEA WebLogic Server 8.1</span>
+		<br><span class="indent40">&ndash; BEA WebLogic Server 7</span>
+		<br><span class="indent40">&ndash; IBM WebSphere 6</span>
+</span></li>
+</ul>
+
+<hr>
+<a name="prior_version"></a>
+<h3>Using a Prior Version</h3>
+
+<p>You cannot upgrade to Java Studio Creator 2 Update 1 from any prior version of the IDE.</p>
+
+
+<p>If you are using Sun Java Studio Creator 2, back up your data files and visit the Sun Java Studio Creator site to review the most up to date <a href="http://developers.sun.com/prodtech/javatools/jscreator/reference/techart/2/migration2u1.html" target="new">migration instructions</a> prior to installing Java Studio Creator 2 Update 1.</p>
+
+
+<p>For FAQs pertaining to the migration of applications developed with earlier versions of the IDE, <a href="http://developers.sun.com/prodtech/javatools/jscreator/reference/faqs/configuration/jsc2_migration.html" target="new">visit</a> the Sun Java Studio Creator site for detailed information.</p>
+
+<p>If you are using the 2004Q2 release or any Early Access Release versions of the product, back up your data files, install Java Studio Creator 2 Update 1, and import the files into the new installation, as described below.</p>
+ 
+<p>To preserve your data sources, you need to export your data sources before installing the new release.</p>
+
+<ol start="1" type="1">
+	<li> In the Servers window, right click on a Data Source and select Export Data Sources.</li>
+	<li> In the Export Data Sources dialog box, save your data source in a directory that is independent of the Java Studio Creator user directory. When you have installed the new version of the IDE, you can import your data sources. </li>
+</ol>
+
+<a name="byb"></a>
+<h4>Before You Begin</h4>
+
+
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Verify that your system meets the system requirements.</span></li>
+	<li class="bullet"><span class="bullettext">Check the FAQs page on the Java Studio Creator web site for late-breaking information.</span></li>
+</ul>
+
+<p><b>Important:</b> Before you install Java Studio Creator 2 Update 1, be sure to close any previous installations of the IDE on the same system. User settings do not migrate properly otherwise. </p>
+<hr>
+<a name="install_instruct"></a>
+<h3>Installation Instructions</h3>
+
+<p>To install Java Studio Creator follow the instructions below.</p>
+
+<ol type="1" start="1.">
+<li>Download the <span class="CDT">creator-2_1-linux-ml.bin</span> file for the Java Studio Creator IDE from this CD into a writable folder on your system.</li>
+<li>Change the file you downloaded to an executable file by typing: 
+  <dl>
+  	<dd class="CDT">chmod +x creator-2_1-linux-ml.bin</dd>
+</li>
+<li>Start the installer by typing: 
+  <dl>
+  	<dd class="CDT">./creator-2_1-linux-ml.bin</dd>
+</li>
+<li>Follow the instructions in the installation wizard to complete the installation.</li>
+</ol>
+
+<hr>
+<a name="startIDE"></a>
+<h3>Starting the IDE</h3>
+<p>Go to <span class="CDT">$HOME/sun/Creator2_1/bin/creator</span> if you used the default installation directory. For a non-default installation directory, go to <em>install-directory</em><span class="CDT">/bin/creator</span>.</p>
+
+<p>You can use startup switches when you start the Creator IDE
+from the command line. The following table lists the startup switch and
+its action.</p>
+<span class="sp10">&nbsp;</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tbody>
+
+    <tr>
+      <td scope="col" align="left" width="290"><b>Startup Switch</b></td>
+      <td scope="col" align="left" valign="top" width="577"><b>Description</b></td>
+    </tr>
+
+    <tr>
+      <td valign="top" width="290"><code>--h<br>
+        --help</code></td>
+
+      <td valign="top" width="577">Print descriptions of common startup
+        parameters.</td>
+    </tr>
+    <tr>
+      <td valign="top" width="290"><code>
+
+        --cp:p <i>additional_classpath</i></code></td>
+
+      <td valign="top" width="577">Prefix the specified classpath to the
+        IDE's classpath.</td>
+
+    </tr>
+    <tr>
+      <td valign="top" width="290"><code>--cp:a
+        <i>additional_classpath</i></code></td>
+      <td valign="top" width="577">Append the specified classpath to the
+        IDE's classpath.</td>
+
+    </tr>
+    <tr>
+
+      <td valign="top" width="290"><code>--fontsize <i>size</i></code></td>
+      <td valign="top" width="577">Set the font size, expressed in points, in
+        the IDE's user interface. If this option is not used, the font size
+        is 11 points.</td>
+    </tr>
+    <tr>
+      <td valign="top" width="290"><code>--jdkhome
+        <i>jdk_home_dir</i></code></td>
+
+     <td valign="top" width="577"><b>Note:</b>
+
+The IDE is tested and bundled with the supported version of the Java 2
+SDK, and in most instances, you do not need to use this switch. For all
+supported platforms except Mac OS, the default JDK is the JDK bundled
+with the product, located under <code>$installdir/java</code>.  For the MacOS, the default JDK is the latest JDK installed on the machine<br>
+       <br>Use the specified version of the
+            Java 2 SDK instead of the default SDK. <br>
+            <br>
+    
+        Back up your user directory before you upgrade the SDK
+            that the IDE uses. If you later need to revert to the previous JDK,
+            switch to the backed up user directory to ensure that you do not lose
+            any settings. <br>
+            <br>
+
+    
+        To switch the IDE's user directory, use the <code>-userdir</code>
+
+            switch.<p></p></td>
+    </tr>
+    <tr>
+      <td valign="top" width="290"><code>--J<i>jvm_option</i></code></td>
+
+      <td valign="top" width="577">Pass the specified flag directly to the
+        JVM.</td>
+
+    </tr>
+
+    <tr>
+      <td valign="top" width="290"><code>--locale
+        <i>language[:country[:variant]]</i></code></td>
+      <td valign="top" width="577"><p>Use the specified locale. The supported languages are<br>
+        English (en),
+		Spanish (es),
+		Korea (ko),
+		Japanese (ja),
+French (fr), and		Simplified Chinese (zh_CN).<br>
+For example, from the <code>%SystemDrive%:\Program Files\Sun\Creator2\bin</code> directory, type:<br> 
+
+
+<code>creator.exe --locale es</code></p></td>
+
+    </tr>
+    <tr>
+      <td valign="top" width="290"><code>--userdir
+      <i>userdir</i></code></td>
+      <td valign="top" width="577">Explicitly specify the userdir, which is
+        the location in which user settings are stored.<br>
+
+        If this option is not used on a UNIX system, the location is 
+
+
+ <code><em>$HOME</em>/.Creator/2_1</code>
+
+ by default. <br>
+ <br>
+ On Microsoft Windows systems, the
+        default is the one specified when you first launched the IDE. In most cases, it is 
+
+
+ <code>%SystemDrive%:\Documents and Settings\<em>username</em>\.Creator\2_1</code>.<br>
+ <br>
+
+        You can determine the current user directory in the About dialog
+        box. Choose Help &gt; About and then select the Detail Tab. The tab
+        lists the location of the User Dir and other product details.
+       
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+<a name="ports"></a>
+<h3>Changes to Default Ports</h3>
+
+<p> The port numbers are changed in this release to allow you to use
+version 2 Update 1 of the IDE side by side with previous versions.</p>
+
+<p><b>Important:</b> If you are working with projects developed in an
+earlier version of Java Studio Creator, note the new default port
+numbers as follows:<p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tbody>
+    <tr>
+      <td scope="col" align="left" width="231"><b>Port Name</b> </td>
+
+      <td scope="col" align="left" width="349"><b>Creator Product Version</b></td>
+      <td scope="col" align="left" width="349"><b>Default Port Number</b></td>
+    </tr>
+
+    <tr>
+      <td rowspan="2" valign="top" width="231">Admin</td>
+      <td valign="top">2 </td>
+
+      <td valign="top"><code>24848</code></td>
+    </tr>
+    <tr>
+      <td valign="top" width="349">2 Update 1</td>
+      <td valign="top" width="349">  <code>25848</code></td>
+    </tr>
+
+    <tr>
+
+      <td rowspan="2" valign="top">JMX Admin </td>
+      <td valign="top">2 <code></code></td>
+      <td valign="top"><code>28686</code></td>
+    </tr>
+    <tr>
+      <td valign="top">2 Update 1</td>
+
+      <td valign="top">	 <code>29686</code></td>
+
+    </tr>
+    <tr>
+      <td rowspan="2" valign="top" width="231">Bundled Database </td>
+      <td valign="top">2 </td>
+      <td valign="top"><code>29092</code></td>
+
+    </tr>
+    <tr>
+
+      <td valign="top" width="349">2 Update 1</td>
+      <td valign="top" width="349">	   <code>21527</code></td>
+    </tr>
+    <tr>
+      <td rowspan="2" valign="top" width="231">Debug</td>
+
+      <td valign="top">2 </td>
+
+      <td valign="top"><code>21044</code></td>
+    </tr>
+    <tr>
+      <td valign="top" width="349">2 Update 1</td>
+      <td valign="top" width="349">	  <code>22044</code></td>
+
+    </tr>
+    <tr>
+
+      <td rowspan="2" valign="top" width="231">Error Handler </td>
+      <td valign="top">2</td>
+      <td valign="top"><code>24444</code></td>
+    </tr>
+    <tr>
+
+      <td valign="top" width="349">2 Update 1</td>
+      <td valign="top" width="349"><code>25444</code>	  </td>
+
+    </tr>
+    <tr>
+      <td rowspan="2" valign="top" width="231">IIOP 1 </td>
+      <td valign="top">2</td>
+
+      <td valign="top"><code>23700</code></td>
+    </tr>
+    <tr>
+
+      <td valign="top" width="349">2 Update 1</td>
+      <td valign="top" width="349"><code>24700</code>	  </td>
+    </tr>
+
+    <tr>
+      <td rowspan="2" valign="top" width="231">IIOP 2 </td>
+      <td valign="top">2</td>
+
+      <td valign="top"><code>21060</code></td>
+    </tr>
+    <tr>
+      <td valign="top" width="349">2 Update 1</td>
+
+      <td valign="top" width="349"><code>22060</code>	   </td>
+    </tr>
+    <tr>
+
+      <td rowspan="2" valign="top">IIOP 3</td>
+      <td valign="top">2<code></code></td>
+      <td valign="top"><code>21061</code></td>
+
+    </tr>
+    <tr>
+      <td valign="top">2 Update 1</td>
+      <td valign="top"><code>22061</code>	  </td>
+
+    </tr>
+    <tr>
+      <td rowspan="2" valign="top">Messaging</td>
+
+      <td valign="top">2</td>
+      <td valign="top"><code>27676</code></td>
+    </tr>
+    <tr>
+
+      <td valign="top">2 Update 1<code></code></td>
+      <td valign="top"><code>28676</code>	  </td>
+
+    </tr>
+    <tr>
+      <td rowspan="2" valign="top">Web (http)</td>
+      <td valign="top">2<code></code></td>
+
+      <td valign="top"><code>28080</code></td>
+    </tr>
+    <tr>
+
+      <td valign="top">2 Update 1 </td>
+      <td valign="top"><code>29080</code></td>
+    </tr>
+    <tr>
+
+      <td rowspan="2" valign="top">Secure Web (https)</td>
+      <td valign="top">2</td>
+
+      <td valign="top"><code>21043</code></td>
+    </tr>
+    <tr>
+      <td valign="top">2 Update 1</td>
+      <td valign="top"> <code>22043</code><br>
+
+	   </td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+<hr>
+<a name="find_dflt_projects_dir"></a>
+<h3>Finding the Default Projects Directory</h3>
+
+<p>On Linux operating systems the default Projects directory is <code>/$HOME/Creator/Projects</code>.</p>
+
+<hr>
+<a name="troubleshooting"></a>
+<h3>Troubleshooting Installation</h3>
+
+<h4>All Supported Platforms</b></h4>
+
+<p>The following table shows installation issues that might occur on
+all supported platforms. The table also provides a workaround for each
+issue.</p>
+
+<span class="sp10">&nbsp;</span><br>    
+<table border="1" cellpadding="5" cellspacing="0">
+  <tbody><tr>
+<td colspan="2"><b>
+  All Supported Platforms: Installation Issues and Workarounds
+  </b></td>
+</tr>
+  <tr class="grey3" align="left" valign="top">
+    <td><strong>Problem
+        
+    </strong>
+
+    </td><td><strong>Workaround
+        
+
+      </strong></td></tr>
+  <tr align="left" valign="top">
+    <td>You get an insufficient temporary disk space error message while installing the product.
+      </td><td>The
+installer requires at least 500 MB of additional temporary disk space.
+On Windows XP and Windows 2000, the default temporary location is <code>%SystemDrive%:\Documents and Settings\</code><em>username</em><code>\Local Settings\Temp</code>. On UNIX platforms, the temporary space location is /var/tmp or /tmp.<br>
+Before you run the installer, ensure that you have at least 500 MB of
+temporary disk space in the locations listed. If you do not have enough
+disk space, then invoke the installer using the -is:tempdir option as
+shown below:<br>
+    <em>install-filename</em> <code>-is:tempdir temporary-directory</code><br>
+
+    where <em>install-filename</em> is the file you downloaded.  </td></tr>
+  <tr align="left" valign="top">
+    <td>The install wizard exits without installing the product. No messages are displayed. 
+    </td><td>The
+downloaded file is not complete. Download the file again and check that
+the size of the downloaded file is the same as the file size specified
+on the download page. Run the installation wizard again. </td></tr>
+  <tr align="left" valign="top">
+
+    <td>Your installation fails.
+    </td><td>Run the installer in debug mode as follows to see the details of the installation failure:
+      <ol>
+
+          <li>Before running the installer, create a file in the download directory named as follows: <br>
+          Linux platform: <code>creator-2_1-linux-ml.sp</code> <br>
+          Mac OS platform: <code>creator-2_1-mac-ml.sp</code> <br>
+
+          Microsoft Windows platform: <code>creator-2_1-windows-ml.sp</code> <br>
+
+          Solaris OS (SPARC platform): <code>creator-2_1-sol-sparc-ml.sp</code> <br>
+          Solaris OS (x86 platform): <code>creator-2_1-sol-x86-ml.sp</code> </li>
+          <li>In the new <code>.sp</code> file, turn on the debug mode by adding the following line: <br>
+
+              <code>is.debug=1</code> </li>
+          <li>Run the installer from the command prompt or terminal window as: <br>
+              <em>installerFilename</em> <code>-is:log log.txt</code> <br>
+          Where <em>installerFilename</em> is the file name for your platform.</li>
+
+      </ol>
+    </td></tr>
+</tbody></table>
+
+
+<h4>UNIX Platforms</h4>
+
+<p>The following table shows installation issues and the workarounds for all supported UNIX platforms: Solaris OS and Linux. </div>
+<span class="sp10">&nbsp;</p>
+<table border="1" cellpadding="5" cellspacing="0">
+  <tbody><tr>
+<td colspan="2"><b>
+  <a name="table_installationnotes_unixplatforms"></a>UNIX Platforms Installation Issues and Workarounds
+  </b></td>
+</tr>
+
+  <tr class="grey3" align="left" valign="top">
+    <td><strong>Problem
+    </strong>
+
+    </td><td><strong>Workaround
+    </strong></td></tr>
+  <tr align="left" valign="top">
+    <td>If
+you perform the installation as root and then run the IDE as a normal
+user, you encounter problems when the IDE tries to write/update files
+in the installation directory due to directory/file access
+restrictions. </td><td>Install the IDE under the user account that you intend to use when you run the IDE. 
+  </td></tr>
+
+  <tr align="left" valign="top">
+    <td>You get this message: <code>The installer is unable to run in a graphical mode. Try running the installer with the -console or -silent option.</code> 
+    </td><td>Check that the <code>DISPLAY</code> environment variable is set correctly. If you are installing on your local system, the <code>DISPLAY</code> environment variable should be set to <em>your-machine-name</em><code>:0.0</code>.<br>      <br>
+
+      Check that you have enabled access to the <code>X</code> server with the command <code>xhost + </code><em>your-machine-name</em>.<br>	  <br>
+      <b>Note</b>: <em>The <code>-console</code> command does not work with the Creator installer.
+    
+
+    </em>  </td></tr>
+
+  <tr align="left" valign="top">
+    <td>It takes a long time for the Install Shield to start, or you receive a message stating: <code>The directory <em>directoryname</em>
+does not contain enough space to extract temporary files. Please
+specify a temporary directory using the -is:tempdir option. Use the
+-is:help option for more information.</code>
+    </td><td><p>Install using the <code>-is:tempdir</code> option. You can start the installer by using this command:</p>
+
+      <p><code>./creator-2_1-sol-sparc-ml.bin -is:tempdir /tmp </code></p>
+
+  </td></tr>
+  <tr align="left" valign="top">
+    <td>The
+installer fails and displays a message stating that there is not enough
+disk space to use for installation. However, the file system that you
+specified for installing the IDE has enough available disk space.
+(5003279) </td><td>Determine if the file system you specified has a
+symbolic link to another file system with disk space that is not
+recognized. For example, in the Solaris platform, <code>/export/home</code> might have 2 GB of space and <code>/ </code>might have 100 MB. The <code>/opt </code>directory is symbolically linked to <code>/export/home</code>. <br>
+
+      <br>
+      If you specified <code>/opt/Creator</code> as the installation directory, the install wizard does not recognize the symbolic link to <code>/export/home</code>. The install wizard recognizes only the <code>/</code> directory, which is the target directory for <code>/opt</code> and has only 100MB. <br>      <br>
+
+To correct the problem, directly specify the local file system with the
+larger available disk space as the installation directory. </td></tr>
+</tbody></table>
+
+
+<hr>
+<a name="autoupdate"></a>
+<h3>Using the Update Center</h3>
+<p>You can get the latest updates for the IDE by using the Update Center. To access the Update Center, from the IDE, select Tools &gt; Update Center. You can either set your proxies or use your system's default settings. See the online help topic Update Center Wizard for information on setting the proxies.</p>
+
+<p>Be sure to check the <a href="http://developers.sun.com/prodtech/javatools/jscreator/downloads/updates/index.html" target="new">Java Studio Creator Updates</a> page regularly for information on new updates and Hot Fixes to the IDE.</p>
+
+
+<hr>
+<a name="hotfix"></a>
+<h3>Hot Fixes</h3>
+<p>The latest hot fix to Java Studio Creator 2 Update 1 provides a design-time performance enhancement. In addition, this fix also addresses issues with Dropdown and Listbox components, and problems with the ReadOnly property of the Text Field component.</p>
+
+<p>Install this Hot Fix via the <a href="http://developers.sun.com/prodtech/javatools/jscreator/downloads/updates/index.html" target="new">Update Center</a>.</p>
+
+
+<hr>
+<a name="uninstalling"></a>
+<h3>Uninstalling the Sun Java Studio Creator 2 Update 1 Software</h3>
+<ol>
+  <li>From the <i>install-directory</i><code>/_uninst</code> directory, type: <code>./uninstall.bin</code></li>
+  <li>Follow the instructions in the uninstall wizard to complete the uninstall.</li>
+  <li>Delete the installation folder. </li>
+</ol>
+
+
+<hr>
+<a name="postuninstallcleanup"></a>
+<h3>Post Uninstall Cleanup</h3>
+<p>If you previously installed Java Studio Creator and are having problems installing, try doing a post uninstall cleanup. The following section gives information about cleanup on the different platforms.</p>
+
+<ol>
+  <li>Start the uninstaller:
+    <ul><li>Mac OS platform: <em>install-folder</em><code>/_uninst/uninstall.command</code> </li>
+        <li>Solaris OS and Linux platforms: <em>install-directory</em><code>/_uninst/uninstall.bin</code> </li>
+
+  </ul>
+  </li>
+  <li>Remove the <em>install-directory</em> by running the <code>/bin/rm -rf <em>install-folder</em></code> command.</li>
+  <li>Clean up the <code>productregistry</code> file. <strong>Note:</strong> For Solaris OS and Linux platforms, you must be root to complete this step. 
+<p>The Linux <code>productregistry</code> file is located in <code>/var/tmp/<em>installation-directory</em>/productregistry</code>. </p>
+
+    </li>
+</ol>
+
+<h4>All Platforms</h4>
+
+<ol>
+  <li>To find the user directory, choose Help &gt; About Sun Java
+Studio Creator, and then open the Details tab. The user directory is
+listed near the bottom of the About Window.&nbsp;<br>
+    For example, the Windows OS user directory is <code>%SystemDrive%:\Documents and Settings\<em>username</em>\.Creator\2_1.</code></li>
+  <li>Delete the <code>.Creator\2_1</code> directory and its contents. <strong><br>
+
+    Note</strong>:
+The Creator layout preferences, project open history, and any remote
+Application Servers settings are deleted when you remove the directory.
+<br>
+    When you reinstall the product, the settings revert to the default settings.
+      </li>
+</ol>
+
+
+<hr>
+<a name="generalissues"></a>
+<h3>General Issues and Bugs</h3>
+
+<p>This section describes some general issues and bugs. The <a href="http://developers.sun.com/prodtech/javatools/jscreator/reference/docs/buglist/" target="new">complete list of the known issues and bugs</a> provides suggested workarounds for the different areas of the Java Studio Creator IDE. The known issues and bugs are sorted by area.</p>
+
+<h4>Administering the Deployment Servers</h4>
+
+<p>The IDE provides some administration functions which include starting and stopping the server, and undeploying an application or resource. You can find these items on context menus for the various nodes under Deployment Server in the Server Navigator window.<br> Each deployment server has its own administration tools. To administer a deployment server, that deployment server must be running.
+
+<p>Information about port numbers is available in the <em>install-directory</em><code>/rave2.1/config/com-sun-rave-install.properties</code> file. Use the number indicated by the <code>adminPort=</code> setting.</p>
+
+<p>The default user name and password are: username: <code>admin</code>, password: <code>adminadmin</code>.</p>
+
+<p>The administrative port for Application Server is not the same as the HTTP port (default <code>29080</code>) that is used to access web pages.</p>
+
+<p>To access administration tools for Application Server:</p>
+
+<ul>
+  <li>Go to <code>http://localhost:25848/.</code></li>
+  <li>To
+open the administration console in the IDE, right-click the Deployment
+Server node and choose View Admin Console from the context menu.</li>
+</ul>
+
+<p>By default, AppServer installation logs are found in
+<code><em>%SystemDrive%</em>:\Document and Settings\<em>Username</em>\Local Settings\Temp</code> . </p>
+
+
+<h4>Application Server out-of-memory error</h4>
+<p>If you do a large number of deployments and you have a large number of
+projects deployed to the Application Server, you might encounter an
+out-of-memory error.</p>
+
+<dl>
+	<dd><b>Workaround:</b> First, reboot your machine. Next, start the Application Server. You might also need to undeploy any project not needed for your current development work. </dd>
+</dl>
+
+<h4>Query Editor</h4>
+<p> The Query Editor supports a limited set of queries. For
+unsupported queries,&nbsp; you must enter the sql yourself. The
+Query Editor's failure to parse such an sql query does not affect query
+execution.</p>
+
+
+<!--BODYCOPY End--> 
+  <hr>
+ 
+<a name="location"></a> 
+<h3>Installer File Location</h3>
+
+<p><a href="../../software/Sun/creator-2_1-linux-ml.bin" name="install">Install</a> Java Studio Creator 2 Update 1 from the CD.
+
+<p>It is also possible to install the software directly from the CD. The installer 
+  <b>creator-2_1-linux-ml.bin</b> is located in the <b>software\Sun\</b> 
+  directory on the root level of this CD. <br>
+
+
+<p><b>IMPORTANT:</b> When prompted by your browser please choose '<b>Run this program from its current location</b>', click '<b>OK</b>' and follow the instructions as they appear on screen. </p>
+
+<hr>
+
+<a name="add_info"></a> 
+<h3>Additional Information</h3>
+
+<dl>
+	<dt>For the latest information on Java Studio Creator please visit...</dt>
+		<dd><a href="http://developers.sun.com/prodtech/javatools/jscreator/" target="new">http://developers.sun.com/prodtech/javatools/jscreator/</a></dd>
+
+	<dt>Getting Started Links</dt>
+		<dd><a href="http://developers.sun.com/prodtech/javatools/jscreator/downloads/" target="new">Downloads &#38; Updates</a></dd>
+
+		<dd><a href="http://developers.sun.com/prodtech/javatools/jscreator/reference/" target="new">Technical Articles &#38; Tips</a></dd>
+
+		<dd><a href="http://developers.sun.com/prodtech/javatools/jscreator/learning/tutorials/" target="new">Tutorials &#38; Training</a></dd>
+
+		<dd><a href="http://developers.sun.com/prodtech/javatools/jscreator/reference/faqs/" target="new">FAQs</a></dd>
+
+		<dd><a href="http://developers.sun.com/prodtech/javatools/jscreator/reference/docs/help/" target="new">Online Help</a></dd>
+
+		<dd><a href="http://developers.sun.com/prodtech/javatools/jscreator/community/" target="new">Forums & Other Community</a></dd>
+
+</dl>
+
+  <hr width="100%">
+
+<p align="center"><font size="-1">Back to...<br><a href="install-main.htm">Software Installation</a></font></p>
+
+<p>
+
+</body>
+</html>

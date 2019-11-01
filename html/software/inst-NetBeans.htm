@@ -1,0 +1,299 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>NetBeans - Installer Info</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script language="JavaScript" src="../popup.js"></script>
+</head>
+
+<body class="main">
+
+<h2>NetBeans&#153; IDE Version 5.5<br>
+ <span class="SubTitle">with Sun Java&#153; System Application Server 9.0 U1 Bundle</span></h2>
+
+<p>Please read the following documentation before you <a href="#location">install</a> 
+  NetBeans from the CD. </p>
+
+<p>Have you reviewed the NetBeans <a href="javascript:openEula('../eulas/la-NetBeans.htm')">License Agreement</a>?</p>
+
+<hr>
+<h3>Installation Overview</h3>
+<dl>
+	<dd><a href="#requirements">System Requirements</a></dd>
+	<dd><a href="#install_instruct">Installation Instructions</a></dd>
+	<dd><a href="#LaunchIDE">Launching the IDE</a></dd>
+	<dd><a href="#AppServer">Registering and Starting the Application Server</a></dd>
+	<dd><a href="#Uninstall">Uninstalling NetBeans IDE</a></dd>
+	<dd><a href="#troubleshooting">Troubleshooting</a></dd>
+	<dd><a href="#location">Installer File Location</a></dd>
+	<dd><a href="#add_info">Additional Information</a></dd>
+</dl>
+
+<hr>
+
+<!--BODYCOPY Start--> 
+<a name="requirements"></a> 
+<h3>System Requirements</h3>
+
+<p>This CD includes the installer for the NetBeans IDE and requires the following...</p>
+
+<p>NetBeans IDE is written in pure Java, it should run on any working implementation of Java 2 SDK, Standard Edition. To use the NetBeans IDE installer you must the J2SDK installed.</p>
+
+<ul type="square" class="bullet">
+	<li class="bullet"><span class="bullettext">Most recent (6.0) version of Sun's <a href="inst-j2se.htm">Java&#153; 2 SDK</a> installed, prior to installing this software.</span></li>
+	<li class="bullet"><span class="bullettext">The NetBeans IDE is supported on Red Hat Fedora Core 3. The IDE known is to run on various other Linux distributions that meet the hardware requirements.</span></li>
+	<li class="bullet"><span class="bullettext">Hardware Requirements
+		<dl>
+			<dd><b>Minimum:</b>
+				<br><span class="indent40">&ndash; 500 MHz Intel Pentium III workstation or equivalent.</span>
+				<br><span class="indent40">&ndash; 512 MB of memory.</span>
+				<br><span class="indent40">&ndash; 450 MB of free disk space.</span>
+				<br><span class="indent40">&ndash; The IDE's minimum screen resolution is 1024x768 pixels.
+			</dd>
+			<dd><b>Recommended:</b>
+				<br><span class="indent40">&ndash; 1.4 GHz Intel Pentium III workstation or equivalent.</span>
+				<br><span class="indent40">&ndash; 1 GB of memory.</span>
+				<br><span class="indent40">&ndash; 850 MB of free disk space of free disk space.</span>
+			</dd>
+	<span></li>
+</ul>
+
+
+<hr>
+<a name="install_instruct"></a>
+<h3>Installation Instructions</h3>
+
+<p>To install NetBeans follow the instructions below.</p>
+
+<p>You must have the most recent (6.0) version of Sun's <a href="inst-j2se.htm">Java&#153; 2 SDK</a> installed, prior to installing this software.</p>
+
+<p>The NetBeans installer in named <b>sjsas_pe-9_0_01-nb-5_5-linux.bin</b> and is located in the <b>software\NetBeans\</b> directory on the root level of this CD.</p>
+
+<p>On Linux machines, the binary installer is the preferred method for installing NetBeans IDE, which is supplied on this CD. The installer <b>sjsas_pe-9_0_01-nb-5_5-linux.bin</b> is located in the <b>software\NetBeans\</b> 
+  directory on the root level of this CD.</p>
+
+<ol type="1" start="1.">
+	<li>Navigate to the directory on this CD that contains the installer (<b>software\NetBeans\</b>) and download the <b>sjsas_pe-9_0_01-nb-5_5-linux.bin</b> file into a writable folder on your system.</li>
+	
+	<li>If necessary, change the installer file's permissions to make the binary executable by typing from a command prompt:
+		<blockquote> <code> $&nbsp;chmod&nbsp;+x&nbsp;<i>your_binary_executable</i></code></blockquote>
+
+	<p><b>Note:</b> Be sure to replace <code><i>your_binary_executable</i></code> with the actual filename of the binary that you downloaded from this CD.</p>
+	</li>
+
+	<li>Launch the installer by typing from a command prompt:
+		<blockquote> <code>$&nbsp;./<i>your_binary_executable</i></code></blockquote>
+
+	<p><b>Note:</b> Again, be sure to replace <code><i>your_binary_executable</i></code> with the actual filename of the binary that you downloaded.</p></li>
+
+	<li>In the install wizard, respond to the License Agreement, then click Next. </li>
+
+	<li>Specify an empty directory within which to install NetBeans IDE, then click Next.</li>
+
+	<li>On the same page of the wizard, specify an empty directory within which to install the Application Server and click Next.</li>
+
+	<li>Choose the JDK you want the IDE to use from the list of suitable choices in the list, then click Next.
+
+	<p>The installer searches for JDKs installed on your system and prompts you  to specify which one it should use. You can also specify which JDK the IDE should use from the command line. For example:</p>
+
+		<blockquote><code> $&nbsp;./<i>your_binary_executable</i>&nbsp;-is:javahome&nbsp;<i>path_to_your_jdk</i></code></blockquote>
+	</li>
+
+	<li>Verify that the installation location is correct and that you have adequate space on your system for the installation.</li>
+
+	<li>Click Next to begin the installation. </li>
+</ol>
+
+<p><b>Note: </b>If you encounter problems successfully completing the software installation, see the <a href="#troubleshooting">Troubleshooting</a> section below for full descriptions and suggested workarounds for unresolved issues that could affect  the installation process.</p>
+
+
+<hr>
+<a name="LaunchIDE"></a> 
+<h3>Launching the IDE</h3>
+<p>Below are instructions for starting the NetBeans IDE. </p>
+
+<ul>
+	<li>Navigate to the <tt>bin</tt> subdirectory of your installation.</li>
+	<li>Execute the launcher script by typing <tt>./netbeans</tt>.</li>
+</ul>
+
+<hr>
+<a name="AppServer"></a> 
+<h3>Registering and Starting the Application Server</h3>
+
+<p>If you used the standalone NetBeans IDE installer, you need to register the Application Server before you can use it.</p>
+
+<p>To register the Sun Java System Application Server:</p>
+
+<ol>
+	<li>Go to Tools &gt;&nbsp;Server Manager.</li>
+	<li>In the Server Manager, click Add Server. </li>
+	<li>In the dialog box, select Sun Java System Application Server 9 and click Next.</li>
+	<li>Enter a name for the server instance. This name is used to identify the server in the IDE.</li>
+	<li>Enter the location, user name, and password. You do not need to enter the installation location and domain if you are registering a remote instance of the server. You must register a local installation of the application server before you can register remote instances.</li>
+	<li>Click Finish. </li>
+</ol>
+
+<p><b>Note:</b> If you used the bundle installer, the Sun Java System Application Server was installed and configured automatically so it is not necessary to carry out the registration procedure outlined above. </p>
+
+<h4>Starting the Sun Java System Application Server</h4>
+
+<p>To start the Application Server:</p>
+
+<ol>
+	<li>In the Runtime window, right-click the newly-created localhost node and choose Start/Stop Server from the contextual menu. </li>
+	 <li>In the Server Status dialog, click Start Server.</li>
+	<li> Click Close to close the dialog box.</li>
+</ol>
+
+<p class="notes"><b>NOTE: </b>The NetBeans IDE and Sun Java System Application Server bundle
+                creates the <tt>admin</tt> user with password <tt>adminadmin</tt> by default.
+                Users should use these settings to log in via the web console.
+
+
+<hr>
+<a name="Uninstall"></a> 
+<h3>Uninstalling NetBeans IDE</h3>
+
+<p>If necessary, you can uninstall the NetBeans IDE using the following procedures.</p>
+
+<ol>
+	<li>Navigate to the <tt>_uninst</tt> subdirectory of your NetBeans IDE installation directory.</li>
+	<li>In a terminal window, type <tt>./uninstaller</tt> to run the InstallShield uninstaller.</li>
+</ol>
+
+<h4>To uninstall the Sun Java System Application Server Platform Edition 9:</h4>
+
+<ol>
+<li>From your system's Start menu, open the Control Panel.</li>
+	<li>Navigate to the installation directory of the Sun Java System Application Server Platform Edition 9.</li>
+	<li>In a terminal window, type <tt>./uninstall</tt> to run the uninstaller.</li>
+</ol>
+
+
+<hr>
+<a name="troubleshooting"></a>
+<h3>Troubleshooting</h3>
+
+<p>If you experience problems installing or running the software, see the
+        list of issues below for workarounds. For a complete list of known issues,
+        system requirements and other useful information, check the <a href="http://www.netbeans.org/community/releases/55/relnotes.html" target="new">Release
+        Notes</a> on the NetBeans website for the most up to date information. </p>
+        <p> Following are the unresolved issues for this release that could affect
+        or disrupt the installation process:
+
+
+
+<a href="http://www.netbeans.org/issues/show_bug.cgi?id=26965" target="new">Issue #26965</a>
+            <blockquote>
+                <p><b>Description:</b></p>
+                <p>When using JDK installations that include an incompatible version of <tt>sax.jar</tt>,
+                the IDE installer crashes with the following message:
+                "The wizard cannot continue because of the following error: could
+                not load wizard specified in /wizard.inf (104)"
+                </p><p><b>Workaround:</b></p>
+
+                <p>Temporarily remove <tt>jre/lib/endorsed/sax.jar</tt> from the JDK directory
+                during IDE installation.
+                </p></blockquote>
+
+            </li>
+
+<li><a href="http://www.netbeans.org/issues/show_bug.cgi?id=65482" target="new">Issue #65482 (Linux only) </a>
+            <blockquote>
+                <p><b>Description:</b></p>
+
+                <p>Unable to install NetBeans on some Mandrake/Mandriva Linux distributions.
+                During initialization, the installer displays the following message:
+                    </p><blockquote>
+                        <pre>Initializing InstallShield Wizard........<br>./netbeans-5_0-bin-linux.bin: line 189: bc: command not found<br>./netbeans-5_0-bin-linux.bin: line 404: [: : integer expression expected </pre>
+                    </blockquote>
+                <p><b>Workaround:</b></p>
+                <p>NetBeans installer uses GNU's bc utility, which doesn't seem to install
+                by default in Mandriva. If you experience this problem, install GNU's
+                bc utility manually prior to installing NetBeans. If you have an active
+                Internet connection, you can  run <tt>urpmi bc</tt> from the command
+                line to accomplish this. Note that it is also possible to download
+                the appropriate RPM and install using the <tt>rpm -i
+                &lt;bc_package&gt;.rpm</tt> command.</p>
+
+            </blockquote>
+            <br>
+
+            </li>
+
+<li><a href="http://www.netbeans.org/issues/show_bug.cgi?id=67530" target="new">Issue #67530</a>
+            <blockquote>
+                <p><b>Description:</b></p>
+                <p>After starting the installer, you get a message that says "Welcome
+                to the Install Wizard for ERROR: null". This could be caused by running
+                multiple installers simultaneously or by running the installer after another
+                installer that has failed to exit.</p>
+                <p><b>Workaround:</b></p>
+
+                <p>Delete the contents of the <tt>\InstallShield\Universal\Common</tt> directory
+                and then restart the installer.</p>
+                <p>On Windows systems, this directory is located at <tt>C:\Program Files\Common files\InstallShield\Universal\Common</tt>.</p>
+                <p>On Solaris and Linux systems, this directory is located at
+                <tt><i>/$HOME</i>/InstallShield/Universal/Common</tt>.</p>
+
+            </blockquote>
+
+            </li><li> <a href="http://www.netbeans.org/issues/show_bug.cgi?id=52012" target="new">Issue #52012 (only Turkish locale on Windows XP systems)</a>
+            <blockquote>
+                <p><b>Description:</b></p>
+                <p>For systems set to use the Turkish locale, the installer does not successfully
+                finish.</p>
+                <p><b>Workaround:</b></p>
+
+                <p>Cancel the installer. On your system, switch to the English (United States) locale and then
+                restart the installer. </p>
+                <p>On Windows XP systems, you can switch locales on your system by choosing Start | Control Panel
+                 and double-clicking Regional and Language Options. Then select the locale from the
+                 drop-down list in the Standards and Formats section of the dialog box.</p>
+            </blockquote>
+
+<!--BODYCOPY Start--> 
+  <hr>
+ 
+<a name="location"></a> 
+<h3>Installer File Location</h3>
+
+<p><a href="../../software/NetBeans/sjsas_pe-9_0_01-nb-5_5-linux.bin" name="install">Download</a> NetBeans from this CD.
+
+
+<hr>
+<a name="add_info"></a> 
+<h3>Additional Information</h3>
+
+<dl>
+	<dt>For the latest information on NetBeans please visit...</dt>
+		<dd><a href="http://www.netbeans.org" target="new">http://www.netbeans.org</a></dd>
+
+	<dt>NetBeans IDE 5.5 Quick Start Guide</dt>
+		<dd><a href="http://www.netbeans.org/kb/55/quickstart.html" target="new">http://www.netbeans.org/kb/55/quickstart.html</a></dd>
+
+	<dt>Support and Docs</dt>
+		<dd><a href="http://www.netbeans.org/kb/" target="new">http://www.netbeans.org/kb/</a></dd>
+
+	<dt>Knowledge Base - User FAQs</dt>
+		<dd><a href="http://wiki.netbeans.info/wiki/view/NetBeansUserFAQ" target="new">http://wiki.netbeans.info/wiki/view/NetBeansUserFAQ</a></dd>
+
+	<dt>NetBeans Resource List</dt>
+		<dd><a href="http://www.netbeans.org/products/ide/resources.html" target="new">http://www.netbeans.org/products/ide/resources.html</a></dd>
+
+	<dt>NetBeans Community</dt>
+		<dd><a href="http://www.netbeans.org/community/" target="new">http://www.netbeans.org/community/</a></dd>
+
+</dl>
+
+  <hr width="100%">
+
+<p align="center"><font size="-1">Back to...<br><a href="install-main.htm">Software Installation</a></font></p>
+
+<p>
+
+</body>
+</html>

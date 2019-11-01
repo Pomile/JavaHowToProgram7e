@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://equationgenerator.ch28.jhtp7.deitel.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://equationgenerator.ch28.jhtp7.deitel.com/" name="EquationGeneratorService">
+  <types>
+    <xsd:schema>
+      <xsd:import namespace="http://equationgenerator.ch28.jhtp7.deitel.com/" schemaLocation="http://pjd2:8080/EquationGenerator/EquationGeneratorService/__container$publishing$subctx/WEB-INF/wsdl/EquationGeneratorService_schema1.xsd" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </xsd:schema>
+  </types>
+  <message name="generateEquation">
+    <part name="parameters" element="tns:generateEquation"/>
+  </message>
+  <message name="generateEquationResponse">
+    <part name="parameters" element="tns:generateEquationResponse"/>
+  </message>
+  <portType name="EquationGenerator">
+    <operation name="generateEquation">
+      <input message="tns:generateEquation"/>
+      <output message="tns:generateEquationResponse"/>
+    </operation>
+  </portType>
+  <binding name="EquationGeneratorPortBinding" type="tns:EquationGenerator">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <operation name="generateEquation">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="EquationGeneratorService">
+    <port name="EquationGeneratorPort" binding="tns:EquationGeneratorPortBinding">
+      <soap:address location="http://pjd2:8080/EquationGenerator/EquationGeneratorService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"/>
+    </port>
+  </service>
+</definitions>
